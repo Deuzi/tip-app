@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip-app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <main>
+    <h1 id="logo">SPLI<br>TTER</h1>
+    <section id="tip-calculator-container">
+        <section id="calculator">
+            <form action="submit">
+                <label for="Bill">Bill</label>
+                <input type="text" id="bill">
+            </form>
+
+            <section id="tip-percentage">
+                <h2>Select Tip %</h2>
+                <div class="p-options">
+                    <button>5%</button>
+                    <button>10%</button>
+                    <button>15%</button>
+                    <button>25%</button>
+                    <button>50%</button>
+                    <input type="text" id="custom">
+                </div>
+            </section>
+
+            <section id="tmno-tipper">
+                <label for="tippers"> Number of People</label>
+                <input type="text" id="tippers">
+            </section>
+        </section>
+
+        <section id="total">
+            <div id="tip-per-person">
+                <p>Tip Amount <br> <small> /person</small></p>
+                <p class="per-person">
+                    
+                </p>
+            </div>
+            <div id="total-per-person">
+                <p>Total <br> <small> /person</small></p>
+                <p class="per-person">
+                    
+                </p>
+            </div>
+
+            <button id="reset">RESET</button>
+        </section>
+    </section>
+   </main>
+    <script src="tip.js" defer></script>
+</body>
+</html>
