@@ -129,7 +129,19 @@ main #logo{
     background-position: left 0.8rem center;
 }
 
+#tmno-tipper label {
+    display: flex;
+    justify-content: space-between;
+}
 
+#tmno-tipper #error{
+    color: #ff0d0d;
+    display: none;
+}
+
+input::placeholder{
+    color: var(--Very-dark-cyan);
+}
 
 #total{
     width: 100%;
@@ -152,7 +164,7 @@ main #logo{
 .per-person{
     color: var(--Strong-cyan);
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 #total button{
@@ -165,4 +177,5 @@ main #logo{
     padding: 0.7rem;
     margin-top: 1rem;
     font-weight: 600;
+    cursor: pointer;
 }

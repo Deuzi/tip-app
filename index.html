@@ -13,38 +13,38 @@
         <section id="calculator">
             <form action="submit">
                 <label for="Bill">Bill</label>
-                <input type="text" id="bill">
+                <input type="text" name="bill" id="bill" placeholder="0">
+                <section id="tip-percentage">
+                    <h2>Select Tip %</h2>
+                    <div class="p-options">
+                        <button class="percentage-btn" data-value="5">5%</button>
+                        <button class="percentage-btn" data-value="10">10%</button>
+                        <button class="percentage-btn" data-value="15">15%</button>
+                        <button class="percentage-btn" data-value="25">25%</button>
+                        <button class="percentage-btn" data-value="50">50%</button>
+                        <input type="text" id="custom" name="custom" placeholder="Custom">
+                    </div>
+                </section>
+    
+                <section id="tmno-tipper">
+                    <label for="tippers"> Number of People <p id="error"> Can't be zero</p></label>
+                    <input type="text" name="tippers" id="tippers" placeholder="0">
+                </section>
             </form>
 
-            <section id="tip-percentage">
-                <h2>Select Tip %</h2>
-                <div class="p-options">
-                    <button>5%</button>
-                    <button>10%</button>
-                    <button>15%</button>
-                    <button>25%</button>
-                    <button>50%</button>
-                    <input type="text" id="custom">
-                </div>
-            </section>
-
-            <section id="tmno-tipper">
-                <label for="tippers"> Number of People</label>
-                <input type="text" id="tippers">
-            </section>
         </section>
 
         <section id="total">
             <div id="tip-per-person">
                 <p>Tip Amount <br> <small> /person</small></p>
-                <p class="per-person">
-                    
+                <p class="per-person individual-tip">
+                    $0.00
                 </p>
             </div>
             <div id="total-per-person">
                 <p>Total <br> <small> /person</small></p>
-                <p class="per-person">
-                    
+                <p class="per-person  personal-payment">
+                    $0.00
                 </p>
             </div>
 
